@@ -8,7 +8,7 @@ const Footer = () => {
       <ul className="flex gap-8">
         <li>
           <Link
-            href="https://www.facebook.com"
+            href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAADlcIygBrdWkIsvRXQGou6FzSkvzl8IeqAU&keywords=memansa%20bajpai&origin=RICH_QUERY_SUGGESTION&position=0&searchId=b378c14d-5308-4a28-bb01-ca43e38d52df&sid=0mU&spellCorrectionEnabled=false"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -17,7 +17,7 @@ const Footer = () => {
         </li>
         <li>
           <Link
-            href="https://www.instagram.com"
+            href="https://www.instagram.com/memansabajpai/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -26,7 +26,7 @@ const Footer = () => {
         </li>
         <li>
           <Link
-            href="https://www.twitter.com"
+            href="https://www.behance.net/memansabajpai"
             target="_blank"
             rel="noopener noreferrer"
           >
