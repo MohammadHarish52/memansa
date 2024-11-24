@@ -8,9 +8,22 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      animation: {
+        slideDown: "slideDown 1s ease-out forwards",
+        fadeIn: "fadeIn 1s ease-out forwards",
+      },
+      keyframes: {
+        slideDown: {
+          "0%": { transform: "translateY(-100%)", opacity: "0" },
+          "100%": { transform: "translateY(0)", opacity: "1" },
+        },
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+      },
+      fontFamily: {
+        cursive: ['"Dancing Script"', "cursive"], // Example cursive font
       },
     },
   },
