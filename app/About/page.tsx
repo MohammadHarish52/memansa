@@ -15,7 +15,7 @@ const AboutPage = () => {
           transition={{ duration: 0.8 }}
           className="relative"
         >
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-[#434850] tracking-tight leading-tight mb-8">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-[#434850] tracking-tight leading-tight mb-8 font-['Caveat']">
             About Me
           </h1>
 

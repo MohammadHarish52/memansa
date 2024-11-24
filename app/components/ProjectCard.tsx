@@ -17,19 +17,27 @@ export function ProjectCard({
   imageUrl,
 }: ProjectCardProps) {
   return (
-    <Card className="w-[300px] bg-white">
+    <Card className="w-[300px] bg-[#fbf3ea] border-none shadow-lg hover:shadow-xl transition-shadow duration-300">
       <CardContent className="p-0">
-        <div className="relative aspect-[4/3] w-full">
-          <Image src={imageUrl} alt={name} fill className="object-cover" />
+        <div className="relative aspect-[4/3] w-full overflow-hidden">
+          <Image
+            src={imageUrl}
+            alt={name}
+            fill
+            className="object-cover transition-transform duration-300 hover:scale-105"
+          />
         </div>
       </CardContent>
       <CardFooter className="flex flex-col items-start gap-4 p-6">
         <div>
-          <h3 className="text-xl font-semibold">{name}</h3>
-          <p className="text-sm text-gray-500">{category}</p>
+          <h3 className="text-xl font-semibold text-[#434850]">{name}</h3>
+          <p className="text-sm text-[#90b4aa]">{category}</p>
         </div>
-        <Link href={`/projects/${id}`}>
-          <Button variant="outline" className="w-full">
+        <Link href={`/projects/${id}`} className="w-full">
+          <Button
+            variant="outline"
+            className="w-full border-[#90b4aa] text-[#90b4aa] hover:bg-[#90b4aa] hover:text-white transition-colors duration-300"
+          >
             View Project
           </Button>
         </Link>

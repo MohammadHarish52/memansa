@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import { Facebook, Instagram, Mail } from "lucide-react";
 
 const page = () => {
@@ -22,39 +23,104 @@ const page = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center w-full h-full p-10 bg-[#fefff2] text-black">
-      <h1 className="text-5xl font-serif mb-8">Contact</h1>
-      <form className="w-full max-w-lg" onSubmit={handleSubmit}>
-        <input
-          type="text"
-          name="name"
-          placeholder="Your Name"
-          value={formData.name}
-          onChange={handleChange}
-          className="w-full p-3 mb-4 border border-gray-300 rounded bg-[#f0f0e9]"
-        />
-        <input
-          type="email"
-          name="email"
-          placeholder="Your Email"
-          value={formData.email}
-          onChange={handleChange}
-          className="w-full p-3 mb-4 border border-gray-300 rounded bg-[#f0f0e9]"
-        />
-        <textarea
-          name="message"
-          placeholder="Your Message"
-          value={formData.message}
-          onChange={handleChange}
-          className="w-full p-3 mb-4 border border-gray-300 rounded h-32 bg-[#f0f0e9]"
-        />
-        <button
-          type="submit"
-          className="w-full p-3 bg-[#242425] text-white rounded hover:bg-gray-800 transition duration-300"
+    <div className="w-full h-screen flex flex-col md:flex-row bg-[#fbf3ea]">
+      {/* Left side - Form Content */}
+      <div className="w-full md:w-1/2 flex flex-col justify-center px-8 md:px-16 lg:px-24">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="relative"
         >
-          Send Message
-        </button>
-      </form>
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-[#434850] tracking-tight leading-tight mb-8 font-['Caveat']">
+            Contact
+          </h1>
+
+          <motion.div
+            initial={{ scaleX: 0 }}
+            animate={{ scaleX: 1 }}
+            transition={{ delay: 0.3, duration: 0.8 }}
+            className="w-24 h-0.5 bg-[#90b4aa] mt-6 mb-8 origin-left"
+          />
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.8, duration: 0.5 }}
+          >
+            <form onSubmit={handleSubmit} className="space-y-6">
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                value={formData.name}
+                onChange={handleChange}
+                className="w-full p-3 bg-transparent border-b border-[#90b4aa] focus:outline-none focus:border-[#434850] text-[#434850] placeholder-[#90b4aa]"
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                value={formData.email}
+                onChange={handleChange}
+                className="w-full p-3 bg-transparent border-b border-[#90b4aa] focus:outline-none focus:border-[#434850] text-[#434850] placeholder-[#90b4aa]"
+              />
+              <textarea
+                name="message"
+                placeholder="Your Message"
+                value={formData.message}
+                onChange={handleChange}
+                className="w-full p-3 bg-transparent border-b border-[#90b4aa] focus:outline-none focus:border-[#434850] text-[#434850] placeholder-[#90b4aa] h-32 resize-none"
+              />
+              <button
+                type="submit"
+                className="w-full p-3 border border-[#90b4aa] text-[#90b4aa] hover:bg-[#90b4aa] hover:text-white transition duration-300"
+              >
+                Send Message
+              </button>
+            </form>
+          </motion.div>
+        </motion.div>
+      </div>
+
+      {/* Right side - Social Links */}
+      <motion.div
+        initial={{ opacity: 0, x: 20 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8, delay: 0.5 }}
+        className="w-full md:w-1/2 h-[50vh] md:h-screen flex flex-col justify-center items-center bg-[#90b4aa] bg-opacity-10"
+      >
+        {/* <div className="flex flex-col gap-8 items-center">
+          <motion.a
+            href="mailto:your-email@example.com"
+            whileHover={{ scale: 1.1 }}
+            className="flex items-center gap-4 text-[#434850] hover:text-[#90b4aa] transition-colors"
+          >
+            <Mail className="w-6 h-6" />
+            <span>your-email@example.com</span>
+          </motion.a>
+          <motion.a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.1 }}
+            className="flex items-center gap-4 text-[#434850] hover:text-[#90b4aa] transition-colors"
+          >
+            <Instagram className="w-6 h-6" />
+            <span>@yourusername</span>
+          </motion.a>
+          <motion.a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.1 }}
+            className="flex items-center gap-4 text-[#434850] hover:text-[#90b4aa] transition-colors"
+          >
+            <Facebook className="w-6 h-6" />
+            <span>Your Name</span>
+          </motion.a>
+        </div> */}
+      </motion.div>
     </div>
   );
 };
