@@ -57,8 +57,8 @@ export default function ProjectsSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-5xl md:text-7xl lg:text-8xl font-bold text-[#434850] tracking-tight leading-tight mb-12">
-            Projects
+          <h2 className="text-5xl md:text-7xl lg:text-8xl font-thin text-[#434850] tracking-tight leading-tight mb-12 font-sans">
+            PROJECTS
           </h2>
 
           <motion.div
@@ -91,7 +91,7 @@ export default function ProjectsSection() {
               variant="outline"
               size="icon"
               onClick={scrollPrev}
-              className="rounded-full border-[#90b4aa] text-[#90b4aa] hover:bg-[#90b4aa] hover:text-white"
+              className="rounded-full border-[#90b4aa ] text-[#90b4aa] hover:bg-[#90b4aa] hover:text-[#fbf3ea]"
             >
               <ChevronLeft className="h-5 w-5" />
             </Button>
@@ -99,7 +99,7 @@ export default function ProjectsSection() {
               variant="outline"
               size="icon"
               onClick={scrollNext}
-              className="rounded-full border-[#90b4aa] text-[#90b4aa] hover:bg-[#90b4aa] hover:text-white"
+              className="rounded-full border-[#90b4aa] text-[#90b4aa] hover:bg-[#90b4aa] hover:text-[#fbf3ea]"
             >
               <ChevronRight className="h-5 w-5" />
             </Button>

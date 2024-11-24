@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Facebook, Instagram, Mail } from "lucide-react";
+import { PiToteBold } from "react-icons/pi";
 
 const page = () => {
   const [formData, setFormData] = useState({
@@ -32,8 +32,8 @@ const page = () => {
           transition={{ duration: 0.8 }}
           className="relative"
         >
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-[#434850] tracking-tight leading-tight mb-8 font-['Caveat']">
-            Contact
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-thin text-[#434850] tracking-tight leading-tight mb-8 font-sans">
+            CONTACT
           </h1>
 
           <motion.div
@@ -88,38 +88,9 @@ const page = () => {
         initial={{ opacity: 0, x: 20 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, delay: 0.5 }}
-        className="w-full md:w-1/2 h-[50vh] md:h-screen flex flex-col justify-center items-center bg-[#90b4aa] bg-opacity-10"
+        className="w-full md:w-1/2 h-[50vh] md:h-screen flex flex-col justify-center items-center bg-[#fbf3ea] bg-opacity-10"
       >
-        {/* <div className="flex flex-col gap-8 items-center">
-          <motion.a
-            href="mailto:your-email@example.com"
-            whileHover={{ scale: 1.1 }}
-            className="flex items-center gap-4 text-[#434850] hover:text-[#90b4aa] transition-colors"
-          >
-            <Mail className="w-6 h-6" />
-            <span>your-email@example.com</span>
-          </motion.a>
-          <motion.a
-            href="https://instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            whileHover={{ scale: 1.1 }}
-            className="flex items-center gap-4 text-[#434850] hover:text-[#90b4aa] transition-colors"
-          >
-            <Instagram className="w-6 h-6" />
-            <span>@yourusername</span>
-          </motion.a>
-          <motion.a
-            href="https://facebook.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            whileHover={{ scale: 1.1 }}
-            className="flex items-center gap-4 text-[#434850] hover:text-[#90b4aa] transition-colors"
-          >
-            <Facebook className="w-6 h-6" />
-            <span>Your Name</span>
-          </motion.a>
-        </div> */}
+        <PiToteBold className="w-24 h-24  text-[#90b4aa]" />
       </motion.div>
     </div>
   );
