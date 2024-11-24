@@ -1,10 +1,10 @@
 import Link from "next/link";
-import { Instagram, Twitter } from "lucide-react";
+import { Instagram, Linkedin, Twitter } from "lucide-react";
 import { FaBehance } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className="flex justify-center items-center py-16 bg-[#fefff2] text-black">
+    <footer className="flex justify-center items-center py-16 bg-[#fbf3ea] text-[#434850]">
       <ul className="flex gap-8">
         <li>
           <Link
@@ -12,7 +12,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Twitter className="w-6 h-6 hover:text-gray-600" />
+            <Linkedin className="w-6 h-6 hover:text-gray-600" />
           </Link>
         </li>
         <li>

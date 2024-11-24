@@ -1,11 +1,11 @@
 import React from "react";
 import NameSection from "./components/NameSection";
-import ProjectCarousal from "./components/ProjectCarousal";
+// import ProjectCarousal from "./components/ProjectCarousal";
 
 const page = () => {
   return (
     <div>
-      <ProjectCarousal />
+      {/* <ProjectCarousal /> */}
       <NameSection />
     </div>
   );

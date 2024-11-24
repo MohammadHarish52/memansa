@@ -48,7 +48,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex justify-between items-center px-8 py-4 bg-[#242425] text-[#fefff2] relative">
+    <nav className="flex justify-between items-center px-8 py-4 bg-[#90b4aa] text-[#fefff2] relative">
       <div className="font-thin text-xl font-['Caveat']">Memansa</div>
 
       {/* Desktop Menu */}
