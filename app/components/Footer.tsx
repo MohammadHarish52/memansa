@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { Facebook, Instagram, Twitter } from "lucide-react";
-import { FaSquareBehance } from "react-icons/fa6";
+import { Instagram, Twitter } from "lucide-react";
+import { FaBehance } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -12,7 +12,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Facebook className="w-6 h-6 hover:text-gray-600" />
+            <Twitter className="w-6 h-6 hover:text-gray-600" />
           </Link>
         </li>
         <li>
@@ -30,7 +30,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaSquareBehance className="w-6 h-6 hover:text-gray-600" />
+            <FaBehance className="w-6 h-6 hover:text-gray-600" />
           </Link>
         </li>
       </ul>

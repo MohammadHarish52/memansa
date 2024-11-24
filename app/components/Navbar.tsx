@@ -48,8 +48,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex justify-between items-center px-8 py-4 bg-[#fefff2] text-black relative">
-      <div className="font-thin text-xl">Memansa</div>
+    <nav className="flex justify-between items-center px-8 py-4 bg-[#242425] text-[#fefff2] relative">
+      <div className="font-thin text-xl font-['Caveat']">Memansa</div>
 
       {/* Desktop Menu */}
       <ul className="hidden md:flex gap-8">
