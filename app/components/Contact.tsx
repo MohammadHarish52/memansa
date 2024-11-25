@@ -19,7 +19,7 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const mailtoLink = `mailto:your-email@example.com?subject=Contact from ${formData.name}&body=${formData.message}`;
+    const mailtoLink = `mailto:memansabajpai@gmail.com?subject=Contact from ${formData.name}&body=${formData.message}`;
     window.location.href = mailtoLink;
   };
 
