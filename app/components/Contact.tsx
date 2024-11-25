@@ -75,7 +75,7 @@ const Contact = () => {
               />
               <button
                 type="submit"
-                className="w-full p-3 border border-[#90b4aa] text-[#90b4aa] hover:bg-[#90b4aa] hover:text-white transition duration-300"
+                className="w-full p-3 border border-[#90b4aa] bg-[#90b4aa] text-[#fefff2] hover:bg-[#a3bcb5] hover:text-[#fefff2] transition duration-300"
               >
                 Send Message
               </button>

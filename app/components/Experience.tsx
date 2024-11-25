@@ -71,11 +71,11 @@ const Experience = () => {
             >
               <div className="relative">
                 <div className="absolute -left-[41px] top-1 w-4 h-4 rounded-full bg-[#90b4aa]" />
-                <h3 className="text-2xl font-semibold text-[#434850] mb-1">
+                <h3 className="text-2xl font-semibold text-[#434850] mb-1 font-sans">
                   {exp.company}
                 </h3>
-                <p className="text-[#90b4aa] mb-2">{exp.date}</p>
-                <p className="text-xl text-[#434850] mb-4 font-medium">
+                <p className="text-[#90b4aa] mb-2 font-sans">{exp.date}</p>
+                <p className="text-xl text-[#434850] mb-4 font-medium font-sans">
                   {exp.title}
                 </p>
                 <ul className="space-y-3">
