@@ -8,6 +8,7 @@ interface ProjectCardProps {
   name: string;
   category: string;
   imageUrl: string;
+  pdfUrl: string;
 }
 
 export function ProjectCard({
@@ -15,11 +16,16 @@ export function ProjectCard({
   name,
   category,
   imageUrl,
+  pdfUrl,
 }: ProjectCardProps) {
+  const handleViewProject = () => {
+    window.open(pdfUrl, "_blank");
+  };
+
   return (
-    <Card className="w-[300px] bg-[#fbf3ea] border-none shadow-lg hover:shadow-xl transition-shadow duration-300">
-      <CardContent className="p-0">
-        <div className="relative aspect-[4/3] w-full overflow-hidden">
+    <Card className="w-[300px] h-[400px] bg-[#fbf3ea] border-none rounded-none hover:shadow-xl transition-shadow duration-300">
+      <CardContent className="p-0 h-[240px]">
+        <div className="relative w-full h-full overflow-hidden">
           <Image
             src={imageUrl}
             alt={name}
@@ -28,19 +34,20 @@ export function ProjectCard({
           />
         </div>
       </CardContent>
-      <CardFooter className="flex flex-col items-start gap-4 p-6">
+      <CardFooter className="flex flex-col items-start justify-between h-[160px] p-6">
         <div>
-          <h3 className="text-xl font-semibold text-[#434850]">{name}</h3>
-          <p className="text-sm text-[#90b4aa]">{category}</p>
+          <h3 className="text-xl font-semibold text-[#434850] line-clamp-2">
+            {name}
+          </h3>
+          <p className="text-sm text-[#90b4aa] line-clamp-1">{category}</p>
         </div>
-        <Link href={`/projects/${id}`} className="w-full">
-          <Button
-            variant="outline"
-            className="w-full border-[#90b4aa] text-[#90b4aa] hover:bg-[#90b4aa] hover:text-white transition-colors duration-300"
-          >
-            View Project
-          </Button>
-        </Link>
+        <Button
+          variant="outline"
+          onClick={handleViewProject}
+          className="w-full bg-[#90b4aa] text-white hover:bg-[#a3bcb5] hover:text-white transition-colors duration-300"
+        >
+          View Project
+        </Button>
       </CardFooter>
     </Card>
   );

@@ -10,27 +10,59 @@ import { motion } from "framer-motion";
 const projects = [
   {
     id: "1",
-    name: "Project One",
-    category: "Accessories",
-    imageUrl: "/image1.png", // Update with your actual image paths
+    name: "Hidesign Classroom Project",
+    category: "Bag Design",
+    imageUrl: "/image1.png",
+    pdfUrl: "/pdfs/highdesign_compressed.pdf",
   },
   {
     id: "2",
-    name: "Project Two",
-    category: "Jewelry",
+    name: "Louis Vuitton x Yayoi ",
+    category: "Product Packaging Design",
     imageUrl: "/image2.png",
+    pdfUrl: "/pdfs/Louis_Vuitton_compressed.pdf",
   },
   {
     id: "3",
-    name: "Project Three",
-    category: "Fashion",
+    name: "Heating Pad",
+    category: "Smart Mechanisms Project",
     imageUrl: "/image3.png",
+    pdfUrl: "/pdfs/heating_pad_compressed.pdf",
   },
   {
     id: "4",
-    name: "Project Four",
-    category: "Accessories",
+    name: "Glimmer",
+    category: "Bag Design",
     imageUrl: "/image4.png",
+    pdfUrl: "/pdfs/bag_design_glimmer_compressed.pdf",
+  },
+  {
+    id: "5",
+    name: "Baggit Range Design",
+    category: "Bag Design",
+    imageUrl: "/image5.png",
+    pdfUrl: "/pdfs/bag_design_glimmer_compressed.pdf",
+  },
+  {
+    id: "6",
+    name: "Selena",
+    category: "Headgear Design",
+    imageUrl: "/image6.png",
+    pdfUrl: "/pdfs/selena_compressed.pdf",
+  },
+  {
+    id: "7",
+    name: "Beret Hat",
+    category: "Headgear Design",
+    imageUrl: "/image7.png",
+    pdfUrl: "/pdfs/beret_hat_compressed.pdf",
+  },
+  {
+    id: "8",
+    name: "Kolahpuri Craft Lamp ",
+    category: "Craft Based Project",
+    imageUrl: "/image8.png",
+    pdfUrl: "/pdfs/kolahpuri_chappal_compressed.pdf",
   },
 ];
 

@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const NameSection = () => {
   return (
-    <div className="w-full h-screen flex flex-col md:flex-row bg-[#fbf3ea]">
+    <div className="w-full h-screen flex flex-col md:flex-row bg-[linear-gradient(to_left,_#90b4aa_1%,_#fbf3ea_99%)]">
       {/* Left side - Text Content */}
       <div className="w-full md:w-1/2 flex flex-col justify-center px-8 md:px-16 lg:px-24">
         <motion.div
@@ -40,7 +40,6 @@ const NameSection = () => {
           </motion.div>
         </motion.div>
       </div>
-
       {/* Right side - Image */}
       <motion.div
         initial={{ opacity: 0, x: 20 }}
