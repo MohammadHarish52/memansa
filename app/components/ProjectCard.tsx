@@ -36,10 +36,12 @@ export function ProjectCard({
       </CardContent>
       <CardFooter className="flex flex-col items-start justify-between h-[160px] p-6">
         <div>
-          <h3 className="text-xl font-semibold text-[#434850] line-clamp-2">
+          <h3 className="text-xl font-semibold text-[#434850] line-clamp-2 font-sans">
             {name}
           </h3>
-          <p className="text-sm text-[#90b4aa] line-clamp-1">{category}</p>
+          <p className="text-sm text-[#90b4aa] line-clamp-1 font-sans">
+            {category}
+          </p>
         </div>
         <Button
           variant="outline"

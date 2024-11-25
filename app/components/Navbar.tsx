@@ -80,7 +80,7 @@ const Navbar = () => {
             animate="open"
             exit="closed"
             variants={menuVariants}
-            className="absolute top-16 right-0 left-0 bg-[#fefff2] md:hidden shadow-lg z-40"
+            className="absolute top-16 right-0 left-0 bg-[#90b4aa] md:hidden shadow-lg z-40 text-[#fefff2]"
           >
             <motion.ul className="flex flex-col items-start p-4">
               {navLinks.map((link) => (

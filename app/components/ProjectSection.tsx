@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 const projects = [
   {
     id: "1",
-    name: "Hidesign Classroom Project",
+    name: "Hidesign  Project",
     category: "Bag Design",
     imageUrl: "/image1.png",
     pdfUrl: "/pdfs/highdesign_compressed.pdf",
@@ -34,21 +34,21 @@ const projects = [
     name: "Glimmer",
     category: "Bag Design",
     imageUrl: "/image4.png",
-    pdfUrl: "/pdfs/bag_design_glimmer_compressed.pdf",
+    pdfUrl: "/pdfs/Bag_design_glimmer_compressed.pdf",
   },
   {
     id: "5",
     name: "Baggit Range Design",
     category: "Bag Design",
     imageUrl: "/image5.png",
-    pdfUrl: "/pdfs/bag_design_glimmer_compressed.pdf",
+    pdfUrl: "/pdfs/Range_Design_compressed.pdf",
   },
   {
     id: "6",
     name: "Selena",
     category: "Headgear Design",
     imageUrl: "/image6.png",
-    pdfUrl: "/pdfs/selena_compressed.pdf",
+    pdfUrl: "/pdfs/selene_compressed.pdf",
   },
   {
     id: "7",
