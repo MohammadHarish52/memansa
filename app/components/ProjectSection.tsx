@@ -17,7 +17,7 @@ const projects = [
   },
   {
     id: "2",
-    name: "Louis Vuitton x Yayoi ",
+    name: "LV x YK ",
     category: "Product Packaging Design",
     imageUrl: "/image2.png",
     pdfUrl: "/pdfs/Louis_Vuitton_compressed.pdf",

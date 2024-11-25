@@ -50,7 +50,7 @@ const Experience = () => {
         transition={{ duration: 0.8 }}
       >
         <h2 className="text-5xl md:text-7xl lg:text-8xl font-thin text-[#434850] tracking-tight leading-tight mb-12 font-sans">
-          Experience
+          EXPERIENCE
         </h2>
 
         <motion.div
