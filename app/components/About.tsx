@@ -6,9 +6,9 @@ import { motion } from "framer-motion";
 
 const AboutPage = () => {
   return (
-    <div className="w-full h-screen flex flex-col md:flex-row bg-[#fbf3ea]">
+    <div className="w-full flex flex-col md:flex-row bg-[#fbf3ea]">
       {/* Left side - Text Content */}
-      <div className="w-full md:w-1/2 flex flex-col justify-center px-8 md:px-16 lg:px-24">
+      <div className="w-full md:w-1/2 flex flex-col justify-center px-8 md:px-16 lg:px-24 py-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -47,20 +47,23 @@ const AboutPage = () => {
         </motion.div>
       </div>
 
-      {/* Right side - Image */}
+      {/* Right side - Responsive Image */}
       <motion.div
         initial={{ opacity: 0, x: 20 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, delay: 0.5 }}
-        className="w-full md:w-1/2 h-[50vh] md:h-screen relative"
+        className="w-full md:w-1/2 flex justify-center items-center bg-[#fbf3ea] py-16"
       >
-        <Image
-          src="/about.jpg"
-          alt="Memansa's Design"
-          fill
-          className="object-cover"
-          priority
-        />
+        <div className="relative w-full h-[50vh] md:h-[75vh] lg:h-[90vh]">
+          <Image
+            src="/about.jpg" // Replace with your image path
+            alt="Memansa's Design"
+            layout="fill" // Allow the image to fully fill its container
+            objectFit="contain" // Ensure the image scales without cropping
+            className="rounded-lg"
+            priority
+          />
+        </div>
       </motion.div>
     </div>
   );

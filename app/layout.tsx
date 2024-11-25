@@ -25,8 +25,18 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Memansa Bajpai || Accesories Designer ",
-  description: "Memansa Bajpai || Accesories Designer ",
+  title: "Memansa Bajpai || Accessories Designer",
+  description: "Memansa Bajpai || Accessories Designer",
+  icons: {
+    icon: [
+      {
+        url: "/landing.png",
+        href: "/landing.png",
+        type: "image/png",
+        sizes: "36x36",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({

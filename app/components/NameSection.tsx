@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const NameSection = () => {
   return (
-    <div className="w-full h-screen flex flex-col md:flex-row bg-[linear-gradient(to_left,_#90b4aa_1%,_#fbf3ea_99%)]">
+    <div className="w-full h-screen flex flex-col md:flex-row bg-[#fbf3ea]">
       {/* Left side - Text Content */}
       <div className="w-full md:w-1/2 flex flex-col justify-center px-8 md:px-16 lg:px-24">
         <motion.div
@@ -15,7 +15,7 @@ const NameSection = () => {
           transition={{ duration: 0.8 }}
           className="relative"
         >
-          <h1 className="text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-[#434850] tracking-tight leading-tight font-['Caveat']">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-[#434850] tracking-tight leading-tight font-['Caveat'] mt-12 md:mt-0">
             MEMANSA
             <br />
             BAJPAI
@@ -47,14 +47,16 @@ const NameSection = () => {
         transition={{ duration: 0.8, delay: 0.5 }}
         className="w-full md:w-1/2 h-[50vh] md:h-screen relative flex justify-center items-center"
       >
-        <Image
-          src="/landing.png" // Replace with your image path
-          alt="Memansa Bajpai"
-          width={500}
-          height={500}
-          className="object-cover"
-          priority
-        />
+        <div className="relative w-[70%] sm:w-[50%] md:w-full h-full mt-12 md:mt-0">
+          <Image
+            src="/landing.png" // Replace with your image path
+            alt="Memansa Bajpai"
+            layout="fill"
+            objectFit="contain"
+            priority
+            className="rounded-lg"
+          />
+        </div>
       </motion.div>
     </div>
   );
