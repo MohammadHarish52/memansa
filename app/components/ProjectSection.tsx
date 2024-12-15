@@ -3,7 +3,6 @@
 import React from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { ProjectCard } from "./ProjectCard";
 import { motion } from "framer-motion";
 
@@ -101,7 +100,14 @@ export default function ProjectsSection() {
           />
         </motion.div>
 
-        <div className="relative">
+        <div className="relative group">
+          <button
+            onClick={scrollPrev}
+            className="absolute left-[-70px] top-1/2 transform -translate-y-1/2 text-[#90b4aa] hover:text-[#434850] transition-colors duration-300 bg-transparent p-2"
+          >
+            <ChevronLeft className="h-12 w-12" />
+          </button>
+
           <div className="overflow-hidden" ref={emblaRef}>
             <div className="flex gap-8 min-h-[400px]">
               {projects.map((project) => (
@@ -118,24 +124,12 @@ export default function ProjectsSection() {
             </div>
           </div>
 
-          <div className="flex justify-between mt-12">
-            <Button
-              variant="outline"
-              size="icon"
-              onClick={scrollPrev}
-              className="rounded-full border-[#90b4aa ] text-[#90b4aa] hover:bg-[#90b4aa] hover:text-[#fbf3ea]"
-            >
-              <ChevronLeft className="h-5 w-5" />
-            </Button>
-            <Button
-              variant="outline"
-              size="icon"
-              onClick={scrollNext}
-              className="rounded-full border-[#90b4aa] text-[#90b4aa] hover:bg-[#90b4aa] hover:text-[#fbf3ea]"
-            >
-              <ChevronRight className="h-5 w-5" />
-            </Button>
-          </div>
+          <button
+            onClick={scrollNext}
+            className="absolute right-[-70px] top-1/2 transform -translate-y-1/2 text-[#90b4aa] hover:text-[#434850] transition-colors duration-300 bg-transparent p-2"
+          >
+            <ChevronRight className="h-12 w-12" />
+          </button>
         </div>
       </div>
     </div>

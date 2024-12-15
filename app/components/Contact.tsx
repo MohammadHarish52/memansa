@@ -93,7 +93,7 @@ const Contact = () => {
       >
         <div className="relative w-full h-[50vh] md:h-[75vh] lg:h-[90vh]">
           <Image
-            src="/nift.jpg" // Replace with your image path
+            src="/bottom.jpg" // Replace with your image path
             alt="Memansa's Design"
             layout="fill" // Allow the image to fully fill its container
             objectFit="contain" // Ensure the image scales without cropping
