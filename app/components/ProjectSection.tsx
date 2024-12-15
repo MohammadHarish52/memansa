@@ -82,7 +82,7 @@ export default function ProjectsSection() {
 
   return (
     <div className="w-full min-h-screen bg-[#fbf3ea] flex flex-col justify-center py-16">
-      <div className="container mx-auto px-8 md:px-16 lg:px-24">
+      <div className="container mx-auto px-4 sm:px-8 md:px-16 lg:px-24">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -103,13 +103,13 @@ export default function ProjectsSection() {
         <div className="relative group">
           <button
             onClick={scrollPrev}
-            className="absolute left-[-70px] top-1/2 transform -translate-y-1/2 text-[#90b4aa] hover:text-[#434850] transition-colors duration-300 bg-transparent p-2"
+            className="absolute left-[-30px] sm:left-[-30px] md:left-[-40px] lg:left-[-60px] top-1/2 transform -translate-y-1/2 text-[#90b4aa] hover:text-[#434850] transition-colors duration-300 bg-transparent p-2 z-10"
           >
-            <ChevronLeft className="h-12 w-12" />
+            <ChevronLeft className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 lg:h-12 lg:w-12" />
           </button>
 
           <div className="overflow-hidden" ref={emblaRef}>
-            <div className="flex gap-8 min-h-[400px]">
+            <div className="flex gap-4 sm:gap-6 md:gap-8 min-h-[400px]">
               {projects.map((project) => (
                 <motion.div
                   key={project.id}
@@ -126,9 +126,9 @@ export default function ProjectsSection() {
 
           <button
             onClick={scrollNext}
-            className="absolute right-[-70px] top-1/2 transform -translate-y-1/2 text-[#90b4aa] hover:text-[#434850] transition-colors duration-300 bg-transparent p-2"
+            className="absolute right-[-30px] sm:right-[-30px] md:right-[-40px] lg:right-[-60px] top-1/2 transform -translate-y-1/2 text-[#90b4aa] hover:text-[#434850] transition-colors duration-300 bg-transparent p-2 z-10"
           >
-            <ChevronRight className="h-12 w-12" />
+            <ChevronRight className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 lg:h-12 lg:w-12" />
           </button>
         </div>
       </div>
