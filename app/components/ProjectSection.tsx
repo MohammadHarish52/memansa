@@ -65,8 +65,8 @@ const projects = [
   },
   {
     id: "9",
-    name: "Kolahpuri Chappal",
-    category: "Footwear Design",
+    name: "Kolahpuri Craft",
+    category: "Lamp Design",
     imageUrl: "/3.png",
     pdfUrl: "/pdfs/Kolahpuri_chappal_compressed.pdf",
   },
