@@ -25,7 +25,7 @@ const projects = [
     id: "3",
     name: "LV x YK ",
     category: "Product Packaging Design",
-    imageUrl: "/3.png",
+    imageUrl: "/9.png",
     pdfUrl: "/pdfs/Louis_Vuitton_compressed.pdf",
   },
   {
@@ -44,8 +44,8 @@ const projects = [
   },
   {
     id: "6",
-    name: "Belt Bag",
-    category: "Bag Design",
+    name: "Loops & Lore",
+    category: "Belt Design",
     imageUrl: "/6.png",
     pdfUrl: "/pdfs/BeltBag_compressed.pdf",
   },
@@ -62,6 +62,13 @@ const projects = [
     category: "Bag Design",
     imageUrl: "/8.png",
     pdfUrl: "/pdfs/Range_Design_compressed.pdf",
+  },
+  {
+    id: "9",
+    name: "Kolahpuri Chappal",
+    category: "Footwear Design",
+    imageUrl: "/3.png",
+    pdfUrl: "/pdfs/Kolahpuri_chappal_compressed.pdf",
   },
 ];
 
